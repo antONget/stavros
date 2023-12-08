@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "aquarel-406814",
+  "private_key_id": "1d2114f063d0f5278376752322a1d0783071d5aa",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCbfT3Kxwoy6986\nqd0KHlyDN8dCj2s0y2W0qDk0BezC3sJcddlmrWmHw5ueO+4BeE16zMwjbP9/JfH5\na3mHCHYn5dgRkCzr5W9pJ1OmDlPr4ywzdlsPajRzuSf4YAjUvSkvI69xhq/rIuI6\nzsZS3RLuIKS1zpv6D2l5qOPI4adGs19xWnd4txi1oLDEMeBg9A9kbkkmgGSBsfr8\nBavSE/tVoxqFlCNNcCdwewEXqq6HBo6kiYTgDk8i3dhdAyIXluThfMQ4DvgIlAfU\nP9fx2vY1XelHdnG33gUbEy1l+HBXtowl08FBjp4Hp9yWMchOEC8wb3qkWystcpnz\nMrwCp1yHAgMBAAECgf9TRiHaPdH8Jp4BYvOx0R5t33GoXcEuIVi6/Clf9eVYdEyE\ngSr8U7WwDulFDbiYAl+JBU1qSda+KQbQ2Pz8mX8J66sZk0lo+H4lBwwx4wX8WezA\nmJ57WA6JTZppoVh/a4Kavo5nnFTI4pSzB0+kjDiVIkQe2A+/0HCcKhowDX6bv9eb\nsGeNW5eRqFHguyDP1o85rO/r8MPzEVbbZc4xld30l37WJV/BT+mHes5Y/1HZo81a\nClB8sg4j9YGOGDAvRrKEYGM7/m6LSezKDZFVNMtROn4UA1/3T3NFJvZLrE/lLpxS\nNHPh2vId1zS6UI+BpxImJh5AmZfOoS+LEZc0jAECgYEAz47FOEwOAooTsgXO9oOI\nnSOu6iVb2jbznFAJjZlw7PItCBtiafV5dA5ozx3HF8GOryXPHTEu4m+RNgpP+f7X\nHBuWU3bnY8uODY2IzadJ3C43xR8d7qheEkl8nfy5KfVq5f7cyPKFRsmbHuEd53EK\n6EhyzzxY15oIABlknFEbTdECgYEAv8d3OhgQg3+fqXK1f4P28VR314dlzr91Ghs/\nEiRHb6u+O2BElFYqkgZNn1K6CgvvQyOLyZUnbdduoUHGnH5svacFsTz7LX7pSqWK\nr1L9KRStgnoSw0gOo8yjRdDlZX1hYkClIWfvHJPl9eAkuKp/T5hpWN2mrv2BZl7b\nEMK/YtcCgYEAjwUbAvLtSHSqo6X6+cSjE1yuP6ukglYRQWmpW4ga1zr9KrPr+YVr\nvjvbnrQvJ0B5uFi+QahNXTxxfCJY/7PJuBWOXU72nL570PzxAny+mVjDlzIc5wHf\naIx4sUiesrnogjk/G7x5d9Cd8gY/G+a6FFsvuXsk4NPDpYXZ3RjKTrECgYAs0xxk\n8bb6ZVwWKP+PHHMdmRahw73iAxIF1hR50wz3ZvcBvdCJs1Ij62E9OgLN0lhMIwTL\nSxd6Lv5mpo8biNk1wtIryQsUaTNyBRtTO1x8u56KfqngBvmVA4GuEdNsU0/tvRpb\nooVa8p6vR4KNvxweqIsHAFezUwFpwgYF9t7w5QKBgQCRWymu3ciRxmIp+vUth124\nYDgtJxPyIxb9EuCXuh1YTqmW1LI6fXik2THEuq61Gms0moRjAKGTlL+x0PKwfwv3\nXpVFJ21QV6a0EzOELPdhoE4WZkJCyJN3B21dX5MbcIb3CdWJHEazRqils/2hkDIJ\n+bPY7LuO8mOB05DZEsfemA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "stavros-service@aquarel-406814.iam.gserviceaccount.com",
+  "client_id": "100908510233384057937",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/stavros-service%40aquarel-406814.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
