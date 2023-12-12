@@ -58,7 +58,7 @@ def keyboard_sale():
 
 def keyboard_sale_v1():
     keyboard = types.InlineKeyboardMarkup()  # наша клавиатура
-    key_catalog = types.InlineKeyboardButton(text='Написать в телеграм', url='https://t.me/stsavros')
+    key_catalog = types.InlineKeyboardButton(text='Отправить цифру', url='https://t.me/stsavros')
     keyboard.add(key_catalog)
     return keyboard
 
