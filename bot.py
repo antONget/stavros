@@ -205,10 +205,15 @@ def callback_sale(call):
     print('callback_sale')
     bot.clear_step_handler(call.message)
     bot.answer_callback_query(callback_query_id=call.id)
-    keyboard = keyboards.keyboard_sale()
+    keyboard = keyboards.keyboard_sale_v1()
     bot.send_message(chat_id=call.message.chat.id,
-                     text="В Stavros действуют выгодные условия и персональные скидки на заказы для "
-                          "разных категорий заказчиков. Чем вы занимаетесь?",
+                     text="В Stavros действуют выгодные условия для разных категорий заказчиков.\n\n"
+                          "Чтобы узнать про систему скидок, напишите цифру к какой категории вы себя относите:\n\n"
+                          "1. Дизайнер\n"
+                          "2. Столярная мастерская/строительство\n" 
+                          "3. Мебельная компания\n" 
+                          "4. Крупная мебельная фабрика\n"
+                          "5. Частное лицо",
                      reply_markup=keyboard)
 
 
