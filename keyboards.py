@@ -11,6 +11,12 @@ def keyboard_start():
     keyboard.add(key_sale, key_connect)
     return keyboard
 
+def keyboard_stat():
+     # наша клавиатура
+    key_stat = types.InlineKeyboardButton(text='Получить статистику', callback_data='stat')
+    keyboard = types.InlineKeyboardMarkup()
+    keyboard.add(key_stat)
+    return keyboard
 
 def keyboard_catalog():
     keyboard = types.InlineKeyboardMarkup()  # наша клавиатура
