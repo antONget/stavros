@@ -30,6 +30,11 @@ def get_start_help(message):
                      text="Вы являетесь админом и вам доступен расширенный функционал",
                      reply_markup=keyboard)
 
+
+@bot.message_handler(commands=['admin'])
+def get_start_help(message):
+    bot.send_message(chat_id=message.chat.id,
+                     text="Вы не являетесь админом и вам не доступен расширенный функционал")
     
 
 @bot.callback_query_handler(func=lambda call: call.data == "stat")
