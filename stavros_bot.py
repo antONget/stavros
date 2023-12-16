@@ -1,7 +1,7 @@
 import telebot
 from telebot.types import InputMediaPhoto
 import keyboards
-from config import token_bot
+from config import token_bot, admin_ids
 import googleSheets
 from datetime import datetime
 
@@ -9,17 +9,56 @@ from datetime import datetime
 bot = telebot.TeleBot(token_bot)
 
 
-@bot.message_handler(content_types=['text'])
+@bot.message_handler(commands=['start'])
 def get_start_help(message):
-    text = message.text
-    if text == '/start':
-        keyboard = keyboards.keyboard_start()
-        bot.send_message(chat_id=message.chat.id,
-                         text="Вас приветствует компания Stavros – ведущий российский производитель "
-                              "комплектующих и декора для мебели и интерьеров. Самый большой ассортимент на рынке.\n\n"
-                              "Познакомьтесь с нашим ассортиментом, скачав каталоги и узнайте выгодное персональное "
-                              "предложение для каждой категории клиентов.",
-                         reply_markup=keyboard)
+    now = datetime.now()
+    date = now.strftime("%d/%m/%Y")
+    googleSheets.append_start(message.chat.id, message.chat.username, date)
+    keyboard = keyboards.keyboard_start()
+    bot.send_message(chat_id=message.chat.id,
+                     text="Вас приветствует компания Stavros – ведущий российский производитель "
+                            "комплектующих и декора для мебели и интерьеров. Самый большой ассортимент на рынке.\n\n"
+                            "Познакомьтесь с нашим ассортиментом, скачав каталоги и узнайте выгодное персональное "
+                            "предложение для каждой категории клиентов.",
+                     reply_markup=keyboard)
+    
+
+@bot.message_handler(commands=['admin'], func=lambda message: message.chat.id in admin_ids)
+def get_start_help(message):
+    keyboard = keyboards.keyboard_stat()
+    bot.send_message(chat_id=message.chat.id,
+                     text="Вы являетесь админом и вам доступен расширенный функционал",
+                     reply_markup=keyboard)
+
+    
+
+@bot.callback_query_handler(func=lambda call: call.data == "stat")
+def callback_catalog(call):
+    name_1 = "Современная коллекция"
+    name_2 = "Молдинги"
+    name_3 = "Неоклассика"
+    name_4 = "Новая коллекция"
+    name_5 = "Мебельные ножки, классическая коллекция"
+    name_6 = "Мебельные ножки, современная коллекция"
+    name_7 = "Мебельные ручки"
+    name_8 = "ЕВРОПЕЙСКИЕ МЕБЕЛЬНЫЕ РУЧКИ"
+    name_9 = "Весь декор"
+    name_10 = "ДЕКОР ИЗ ПОЛИУРЕТАНА"
+    res = googleSheets.get_stat()
+    bot.send_message(chat_id=call.message.chat.id,
+                     text=f'<b>Количество скачиваний каталогов</b> \n\n (всего/за последний месяц):\n'
+                          f'1.{name_1} - {len(res[name_1]["all"])}/{len(res[name_1]["mounth"])}\n'
+                          f'2.{name_2} - {len(res[name_2]["all"])}/{len(res[name_2]["mounth"])}\n'
+                          f'3.{name_3} - {len(res[name_3]["all"])}/{len(res[name_3]["mounth"])}\n'
+                          f'4.{name_4} - {len(res[name_4]["all"])}/{len(res[name_4]["mounth"])}\n'
+                          f'5.{name_5} - {len(res[name_5]["all"])}/{len(res[name_5]["mounth"])}\n'
+                          f'6.{name_6} - {len(res[name_6]["all"])}/{len(res[name_6]["mounth"])}\n'
+                          f'7.{name_7} - {len(res[name_7]["all"])}/{len(res[name_7]["mounth"])}\n'
+                          f'8.{name_9} - {len(res[name_9]["all"])}/{len(res[name_9]["mounth"])}\n\n' 
+                          f'Запуск бота\n'
+                          f'(всего/за последний месяц): - {len(res["start"]["all"])}/{len(res["start"]["mounth"])}',
+                     parse_mode='html')
+    
 
 
 # обработка отправленного контакта
