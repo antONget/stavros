@@ -79,7 +79,7 @@ def keyboard_sale_finish():
 
 def keyboard_connect():
     keyboard = types.InlineKeyboardMarkup()  # наша клавиатура
-    key_catalog = types.InlineKeyboardButton(text='Написать в телеграм', url='https://t.me/stsavros')
+    key_catalog = types.InlineKeyboardButton(text='Написать в телеграм', url='https://t.me/+79214313552')
     key_sale = types.InlineKeyboardButton(text='Написать в whatsapp', url='https://wa.me/79215791235?'
                                                                           'text=%D0%9F%D0%B8%D1%88%D1%83%20%D0%B2%D0%B0%D0%BC%20%D0%B8%D0%B7%20%D0%B1%D0%BE%D1%82%D0%B0%20stavros!')
     key_connect = types.InlineKeyboardButton(text='Заказать обратный звонок', callback_data='call_me')
