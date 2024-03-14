@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    container_name: stavros
+    command: python bot.py
+    ports:
+      - 81:81
+    volumes:
+      - ./:/app
