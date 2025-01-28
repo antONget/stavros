@@ -122,16 +122,16 @@ def callback_catalog(call):
 def callback_catalog_download(call):
     print('callback_catalog_download')
     # link_1 = "https://www.stavros.ru/upload/iblock/4ea/q1c3oa50oipjrh8pjqqt6vfoyoyi558f/Ruchki-mebelnye-STAVROS.pdf"
-    link_1 = "https://www.stavros.ru/upload/iblock/616/76j9c3t1vqutmg7tdd37cl4y6svhaztk/Stavros-_2024.-Sovremennaya-kollektsiya-.pdf"
+    link_1 = "https://www.stavros.ru/upload/iblock/0db/e3azdvem5zbsa3q1i29l19b8ma0av3qm/2024._Sovremennaya_kollektsiya.pdf"
     
-    link_2 = "https://www.stavros.ru/upload/iblock/ff3/hjs7o6yt86c3lpn029s76dhmes9pf4bv/Stavros_molding.pdf"
+    link_2 = "https://www.stavros.ru/upload/iblock/982/lnzf3o2p7r00pwifc5x5vu11ildaf0xp/Derevyannyy-pogonazh-STAVROS.pdf"
     link_3 = "https://www.stavros.ru/upload/iblock/6c4/c0l9yc8n5gd7c3o4o8szmixboazps9lh/Stavros_neoclassic.pdf"
 
-    link_4 = "https://www.stavros.ru/upload/medialibrary/96b/vyh612s94y0ajnc6w5yibz59lzxyn7dh/Decor-collection-SUMMER-GARDEN.pdf"
-    link_5 = "https://www.stavros.ru/upload/iblock/b51/pqx2p4befa1h4j0ac6ebun6ujtx39a1r/Stavros_legs_classic.pdf"
-    link_6 = "https://www.stavros.ru/upload/iblock/eca/i98wupwrv4b9gl9xelxjfkpw4xhn7u6p/Stavros%20legs_temporary.pdf"
+    link_4 = "https://www.stavros.ru/upload/iblock/131/wmwkr86p627u3dhl0qbtqh4djxuwbbs4/SUMMER_GARDEN.pdf"
+    link_5 = "https://www.stavros.ru/upload/iblock/553/ujzhlpaip0rft6zi6q22v1hiey1p3qxr/Nozhki-i-karkasy-Klassika-STAVROS.pdf"
+    link_6 = "https://www.stavros.ru/upload/iblock/134/mdf3lgk5xh45lstv0vcu5h3iz2d46whg/Legs_temporary.pdf"
     # link_7 = "https://www.stavros.ru/upload/iblock/4ea/q1c3oa50oipjrh8pjqqt6vfoyoyi558f/Ruchki-mebelnye-STAVROS.pdf"
-    link_7 = "https://www.stavros.ru/upload/iblock/e0f/87qec0z0lsnxghtpp98i42qkfhuzu4g4/Stavros-_-ruchki-iz-dereva-2024.pdf"
+    link_7 = "https://www.stavros.ru/upload/iblock/467/te26w9znjrpub0g9dp8ndfs4z3riri1f/Ruchki_iz_dereva.pdf"
     link_8 = "https://www.stavros.ru/upload/iblock/fba/yb3nwy7upgg9u8n59c5y6xv8w0d1bgc6/Katalog-EVROPEYSKIE-MEBELNYE-RUCHKI.pdf"
     link_9 = "https://www.stavros.ru/upload/iblock/9ef/4zlp91158b0ofuaggu3xz59xg10glhcs/Catalog-decor.pdf"
     link_10 = "https://www.stavros.ru/upload/iblock/09f/95h0n1pmjgfoofhxya0ir1llxcduez6s/Stavros_catalog-decor_PU.pdf"
